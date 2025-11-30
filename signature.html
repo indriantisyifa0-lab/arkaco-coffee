@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Coffee | arkaco.coffee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f0e6;
+            margin: 0;
+            padding: 0;
+            color: #0b3a2a;
+        }
+
+        header {
+            background-color: #0b3a2a;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        a.back {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            color: #0b3a2a;
+            text-decoration: underline;
+        }
+
+        /* 🟩 GRID FOTO: 2 di atas, 1 di bawah */
+        .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.full-width {
+    grid-column: span 2;        /* agar berada di bawah dua item pertama */
+    display: flex;
+    justify-content: center;    /* CENTER posisi horizontal */
+}
+
+.item.full-width {
+    display: flex;
+    justify-content: center;
+}
+
+.item.full-width img {
+    width: 100%;
+    max-width: 350px;      /* samakan dengan ukuran foto atas */
+    height: 350px;         /* tinggi sama sehingga bentuk kotak */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #0b3a2a;
+}
+
+
+
+        /* 🟩 FOTO KOTAK */
+        .item img {
+            width: 100%;
+            aspect-ratio: 1 / 1;    /* menjadikan kotak */
+            border-radius: 12px;
+            border: 3px solid #0b3a2a;
+            object-fit: cover;      /* biar nggak gepeng */
+        }
+
+        .item p {
+            margin-top: 8px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Signature Coffee
+</header>
+
+<a href="home.html" class="back">← Kembali</a>
+
+<h2>Menu Signature</h2>
+
+<div class="gallery">
+
+    <div class="item">
+        <img src="c:\Users\LENOVO\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\E354FD90B2D5C777BFEC87A352A18976\WhatsApp Image 2025-11-28 at 13.52.21_baffda83.jpg" alt="Signature 1">
+        
+    </div>
+
+    <div class="item">
+        <img src="c:\Users\LENOVO\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\4DE81D9105C85BCA6E6E4666E6DD536A\WhatsApp Image 2025-11-28 at 13.52.37_c1a76145.jpg" alt="Signature 2">
+        
+    </div>
+
+    <div class="item full-width small-center">
+    <img src="c:\Users\LENOVO\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\8E065119C74EFE3A47AEC8796964CF8B\WhatsApp Image 2025-11-28 at 13.52.52_0583d551.jpg" alt="Signature 3">
+    
+</div>
+
+
+</div>
+
+</body>
+</html>
